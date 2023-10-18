@@ -26,3 +26,10 @@ let mydata ={
 const myFunction = function () {
     console.log("Hello World!")
 }
+
+// ++++++++++++++++++++++++++++++++++++++
+
+// Stack memory used by Primitive type and when a stack memory is used it means we get the copy of variable that we have declared.
+// Heap memory used by Non-Primitive type. In heap memory is used and an objects is shifted in it then it gives reference of original value.
+
+let myYouTubeName = "hiteshchoudhary.com"
