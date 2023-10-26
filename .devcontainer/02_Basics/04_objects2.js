@@ -5,9 +5,7 @@ tinderUser.id = 123
 tinderUser.name = "Anuj"
 tinderUser.isloggedIn = false
 
-
 // console.log(tinderUser);
-
 
 const regularUser = {
     email : "regular@gmail.com",
@@ -66,3 +64,15 @@ console.log(Object.entries(tinderUser));
 console.log(tinderUser.hasOwnProperty("isloggedIn"));
 console.log(tinderUser.hasOwnProperty("islogged"));
 // hasOwnProperty() is used to check if the key exist within the object or not. Result of this method will always be in boolean.
+
+
+// +++++++++ De-Structure Objects ++++++++
+
+const course = {
+    coursename: "JS in Hindi",
+    price: 999,
+    courseinstructor: "Hitesh"
+}
+// instead of writing "object.keys" everytime to access the values we can also use the following method
+const {courseinstructor} = course
+console.log(courseinstructor);
