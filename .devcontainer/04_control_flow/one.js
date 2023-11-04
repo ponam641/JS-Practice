@@ -30,3 +30,21 @@ if(balance<500) {
 } else{
     console.log("less than 1200")
 }
+
+
+// logical operators
+
+const userLoggedIn = true
+const debitCard = true
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
+if(userLoggedIn && debitCard && 2===3) {
+    console.log("Allow to buy course");
+}else{
+    console.log("not allowed to buy course");
+}
+
+if(loggedInFromEmail || loggedInFromGoogle) {
+    console.log("User is logged in");
+}
