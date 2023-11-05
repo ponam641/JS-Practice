@@ -17,12 +17,35 @@ for (const num of myString) {
     console.log(num);
 }
 
+// Map: just like object it holds key-value pair. But unlike objects, it remembers original insertion order of the keys. Also it do not allow duplicacy. Eg.
+
+const map = new Map()
+// how to ener key-value pair in map:
+map.set("IN", "India")
+map.set("USA", "United States of America")
+map.set("Fr", "France")
+map.set("USA", "United States of America")
+
+// console.log(map);
+// for-of loop and map
+
+for (const key of map) {
+    // console.log(key);// it will print each key-value pair as an individual array.
+}
+
+// to print simply key-value pair without array 
+for (const [key, value] of map) {
+    // console.log(key+" :- "+value);
+}
+
 // for-of loop with Object
-// const myObject = {
-//     name: "PoonamAnuj",
-//     city: "Ambala",
-//     isLoggedIn: true
-// }
-// for (const num1 of myObject) {
-//     console.log(myObject);
-// }
+const myObject = {
+    name: "PoonamAnuj",
+    city: "Ambala",
+    isLoggedIn: true
+}
+for (const [key, value] of myObject) {
+    console.log(key + " : "+value);
+}
+
+// Object are not iteratable with for-of loop so above code will not run.
